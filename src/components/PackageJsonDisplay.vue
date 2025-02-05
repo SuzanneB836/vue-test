@@ -15,7 +15,7 @@
     },
     mounted() {
       // Fetch the package.json from the public folder
-      fetch('/package.json')
+      fetch('./package.json')
         .then(response => response.json())
         .then(data => {
           this.packageData = JSON.stringify(data, null, 2);
